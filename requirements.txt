@@ -179,5 +179,7 @@ zc.lockfile==3.0.post1
 zipp==3.19.2
 python-dotenv==1.1.1
 prometheus_client
+seaborn
+xgboost
 
 -e .
