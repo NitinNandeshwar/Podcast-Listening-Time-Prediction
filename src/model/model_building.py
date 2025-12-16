@@ -1,12 +1,10 @@
 import numpy as np
 import pandas as pd
 import pickle
-from sklearn.linear_model import LogisticRegression
 import yaml
 import os
 import sys
 from src.logger import logging
-from sklearn.preprocessing import PowerTransformer
 import warnings
 warnings.filterwarnings('ignore')
 

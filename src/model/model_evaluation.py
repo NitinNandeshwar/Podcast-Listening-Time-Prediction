@@ -2,7 +2,6 @@ import numpy as np
 import pandas as pd
 import pickle
 import json
-from sklearn.metrics import accuracy_score, precision_score, recall_score, roc_auc_score
 import logging
 import mlflow
 import mlflow.sklearn
@@ -37,13 +36,6 @@ repo_name = os.getenv("DAGSHUB_REPO_NAME")
 mlflow.set_tracking_uri(f'{dagshub_url}/{repo_owner}/{repo_name}.mlflow')
 
 # -------------------------------------------------------------------------------------
-
-# Below code block is for local use
-# -------------------------------------------------------------------------------------
-# mlflow.set_tracking_uri("https://dagshub.com/vikashdas770/learnyard-capstone-project1.mlflow")
-# dagshub.init(repo_owner='vikashdas770', repo_name='learnyard-capstone-project1', mlflow=True)
-# -------------------------------------------------------------------------------------
-
 
 def load_model(file_path: str):
     """Load the trained model from a file."""
