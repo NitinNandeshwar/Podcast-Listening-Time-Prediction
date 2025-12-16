@@ -1,7 +1,16 @@
 data_preprocessing:
-  test_size: 0.26
+  test_size: 0.2
+  random_state: 42
 
 model:
-  C: 0.1
-  solver: 'liblinear'
-  penalty: 'l2'
+  n_estimators: 500
+  max_depth: 6
+  learning_rate: 0.05
+  subsample: 1.0
+  colsample_bytree: 0.9
+  reg_alpha: 0.8
+  reg_lambda: 1.0
+  random_state: 42
+  tree_method: hist
+  device: cpu # set to 'gpu' if using GPU acceleration
+
