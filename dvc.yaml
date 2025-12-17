@@ -51,8 +51,8 @@ stages:
     - src/model/model_evaluation.py
     metrics:
     - reports/metrics.json
-    outs:
-    - reports/experiment_info.json
+    # outs:
+    # - reports/experiment_info.json # It is already tracked by git so no need to add here
 
   model_registration:
     cmd: python src/model/register_model.py

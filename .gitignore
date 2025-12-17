@@ -211,3 +211,4 @@ data/
 *.pkl
 
 notebooks/mlruns/
+!reports\metrics.json   # it is tracked by dvc
