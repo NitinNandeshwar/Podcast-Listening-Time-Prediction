@@ -50,7 +50,7 @@ stages:
     - models/model.pkl
     - src/model/model_evaluation.py
     metrics:
-    - reports/metrics.json
+    - reports/metrics.json   # removed from git tracking, now tracked by dvc
     # outs:
     # - reports/experiment_info.json # It is already tracked by git so no need to add here
 

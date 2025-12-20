@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Prediction Result</title>
+</head>
+<body>
+
+<h2>Prediction Result</h2>
+
+{% if error %}
+    <p style="color:red">{{ error }}</p>
+{% else %}
+    <p><strong>Predicted Listening Time:</strong> {{ prediction }} minutes</p>
+{% endif %}
+
+<a href="/">Go Back</a>
+
+</body>
+</html>
